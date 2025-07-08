@@ -1,7 +1,7 @@
 <script lang="ts">
-    import DVGUPSLogo from '../assets/dvgups.png'
-    import prioritetLogo from '../assets/priority.png'
-    import socialCenterLogo from '../assets/socioСenter.png'
+    import DVGUPSLogo from '../assets/logo/dvgups.png'
+    import prioritetLogo from '../assets/logo/priority.png'
+    import socialCenterLogo from '../assets/logo/socioСenter.png'
 </script>
 
 <header class="fixed w-full z-50 bg-white shadow-md py-2">

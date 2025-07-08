@@ -4,6 +4,8 @@
     import NavigationMenu from '$lib/components/NavigationMenu.svelte';
     import AboutSection from '$lib/components/AboutSection.svelte';
     import ScrollToTop from '$lib/components/ScrollToTop.svelte';
+    import Mission from '$lib/components/Mission.svelte';
+    import Team from '$lib/components/Team.svelte';
 </script>
 
 <Header />
@@ -11,6 +13,8 @@
     <PageTop />
     <NavigationMenu />
     <AboutSection />
+    <Mission/>
+    <Team/>
 </main>
 <ScrollToTop />
 
