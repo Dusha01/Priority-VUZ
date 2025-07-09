@@ -90,8 +90,14 @@
 
             <div class="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {#each teamMembers as member}
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-all duration-200">  <!-- Added hover effects -->
-                        <img src={member.imageUrl} alt={member.name} class="w-full h-32 object-cover object-center" />
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:scale-105 transition-all duration-200">
+                        <div class="flex justify-center">
+                            <img 
+                                src={member.imageUrl} 
+                                alt={member.name} 
+                                class="w-40 h-36 object-cover object-center rounded-lg mt-4" 
+                            />
+                        </div>
                         <div class="p-4">
                             <h3 class="text-lg font-semibold text-gray-800">{member.name}</h3>
                             <p class="text-sm text-gray-600">{member.title}</p>
