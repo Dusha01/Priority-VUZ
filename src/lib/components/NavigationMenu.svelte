@@ -5,14 +5,14 @@
     let menuHeight = 0;
   
     onMount(() => {
-      const menu = document.querySelector('.menu_priority') as HTMLElement; // Type assertion
+      const menu = document.querySelector('.menu_priority') as HTMLElement; 
       if (menu) {
         menuHeight = menu.offsetHeight;
       }
   
       if (menuHeight === 0) {
         setTimeout(() => {
-          const menu = document.querySelector('.menu_priority') as HTMLElement; // Type assertion
+          const menu = document.querySelector('.menu_priority') as HTMLElement; 
           if (menu) {
             menuHeight = menu.offsetHeight;
           }
@@ -27,7 +27,7 @@
     });
   
     function handleScroll() {
-      const pageTop = document.querySelector('.page-top') as HTMLElement; // Type assertion
+      const pageTop = document.querySelector('.page-top') as HTMLElement; 
       if (!pageTop) return;
   
       const pageTopRect = pageTop.getBoundingClientRect();
@@ -35,12 +35,12 @@
   
       sticky = window.scrollY > pageTopBottom - menuHeight;
     }
-  </script>
+</script>
   
 <nav
-    class="menu_priority w-full bg-white shadow-lg z-40 transition-all duration-300"
-    class:fixed={sticky}
-    class:top-0={sticky}
+  class="menu_priority w-full bg-white shadow-lg z-40 transition-all duration-300"
+  class:fixed={sticky}
+  class:top-0={sticky}
     class:left-0={sticky}
     class:relative={!sticky}>
     <div class="container mx-auto">
@@ -54,8 +54,8 @@
             <a href="#team" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
                 <span>КОМАНДА</span>
             </a>
-            <a href="#project" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
-                <span>СТРАТЕГИЧЕСКИЙ ПРОЕКТ</span>
+            <a href="#StrategicProject" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
+              <span>СТРАТЕГИЧЕСКИЙ ПРОЕКТ</span>
             </a>
             <a href="#page-bottom" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
                 <span>ПРОГРАММА РАЗВИТИЯ</span>

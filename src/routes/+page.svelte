@@ -6,6 +6,7 @@
     import ScrollToTop from '$lib/components/ScrollToTop.svelte';
     import Mission from '$lib/components/Mission.svelte';
     import Team from '$lib/components/Team.svelte';
+    import StrategicProject from '$lib/components/StrategicProject.svelte';
 </script>
 
 <Header />
@@ -15,11 +16,6 @@
     <AboutSection />
     <Mission/>
     <Team/>
+    <StrategicProject/>
 </main>
 <ScrollToTop />
-
-<style>
-    main {
-        padding-top: 76px;
-    }
-</style>
