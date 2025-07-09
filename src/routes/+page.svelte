@@ -6,7 +6,10 @@
     import ScrollToTop from '$lib/components/ScrollToTop.svelte';
     import Mission from '$lib/components/Mission.svelte';
     import Team from '$lib/components/Team.svelte';
-    import StrategicProject from '$lib/components/StrategicProject.svelte';
+    import Logistic from '$lib/components/logistic.svelte';
+    import Infrastruct from '$lib/components/infrastruct.svelte';
+    import Economy from '$lib/components/economy.svelte';
+
 </script>
 
 <Header />
@@ -16,6 +19,8 @@
     <AboutSection />
     <Mission/>
     <Team/>
-    <StrategicProject/>
+    <Logistic/>
+    <Infrastruct/>
+    <Economy/>
 </main>
 <ScrollToTop />
