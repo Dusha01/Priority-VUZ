@@ -43,15 +43,15 @@
 <header class={headerClasses}>
     <div class="container mx-auto px-4">
         <div class="flex justify-between items-center">
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4 gap-x-8">
                 <a href="https://sociocenter.info" target="_blank" rel="noopener noreferrer">
-                    <img src={socialCenterLogo} alt="Социо Центр" class="h-12" />
+                    <img src={socialCenterLogo} alt="Социо Центр" class="h-18" />
                 </a>
                 <a href="https://priority2030.ru" target="_blank" rel="noopener noreferrer">
-                    <img src={prioritetLogo} alt="Приоритет 2030" class="h-12" />
+                    <img src={prioritetLogo} alt="Приоритет 2030" class="h-18" />
                 </a>
                 <a href="https://dvgups.ru/" target="_blank" rel="noopener noreferrer">
-                    <img src={DVGUPSLogo} alt="ДВГУПС" class="h-12" />
+                    <img src={DVGUPSLogo} alt="ДВГУПС" class="h-18" />
                 </a>
             </div>
         </div>
