@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import documentIcon from '../assets/icons/document.png'  /*Поменять*/
+    import documentIcon from '../assets/icons/document.png'
+    import { goto } from "$app/navigation";
     
     type DocumentItem = {
         href: string;
@@ -40,7 +41,7 @@
     };
 
     const openProposalForm = () => {
-        window.open('fos.html', 'https://forms.yandex.ru/u/65adc190c09c0298cfc3690e/?iframe=1');
+        window.open('https://forms.yandex.ru/u/65adc190c09c0298cfc3690e/?iframe=1', '_blank');;
     };
 
     onMount(() => {
@@ -129,7 +130,7 @@
             class:opacity-100={isVisible}
             class:translate-y-0={isVisible}>
             <button 
-                on:click={openProjectPage}
+                on:click={() => goto('/Provisions')}
                 class="dropbtn2 w-full bg-blue-600 text-white py-3 px-6 rounded-lg text-left font-medium hover:bg-blue-700 transition-colors duration-300">
                 Положения о реализуемых проектах
             </button>
