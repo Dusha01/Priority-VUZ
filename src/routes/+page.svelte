@@ -9,10 +9,14 @@
     import Logistic from '$lib/components/logistic.svelte';
     import Infrastruct from '$lib/components/infrastruct.svelte';
     import Economy from '$lib/components/economy.svelte';
+    import Growth from '$lib/components/Growth.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 
 </script>
 
+
 <Header />
+
 <main>
     <PageTop />
     <NavigationMenu />
@@ -22,5 +26,8 @@
     <Logistic/>
     <Infrastruct/>
     <Economy/>
+    <Growth/>
 </main>
+
+<Footer/>
 <ScrollToTop />

@@ -57,11 +57,8 @@
             <a href="#StrategicProject" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
               <span>СТРАТЕГИЧЕСКИЙ ПРОЕКТ</span>
             </a>
-            <a href="#page-bottom" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
+            <a href="#documents-section" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
                 <span>ПРОГРАММА РАЗВИТИЯ</span>
-            </a>
-            <a href="#reports" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
-                <span>ОТЧЁТЫ</span>
             </a>
         </div>
     </div>
