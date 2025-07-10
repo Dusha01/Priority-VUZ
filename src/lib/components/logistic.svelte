@@ -99,8 +99,9 @@
     bind:this={sectionRef}>
 
     <div class="container mx-auto px-4 flex">
-        <div class="hidden lg:flex items-center justify-center w-24 min-h-[400px] mr-8 sticky top-1/2 transform -translate-y-1/2 self-start">
-            <h2 class="text-4xl font-bold writing-mode-vertical lg:writing-mode-vertical rotate-270 text-gray-800 tracking-wider whitespace-nowrap transition-all duration-1000 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"                class:opacity-0={!isVisible}
+        <div class="hidden lg:flex items-center justify-center w-24 min-h-[400px] mr-8 sticky top-[100px] transform -translate-y-0 self-start">
+            <h2 class="text-4xl font-bold writing-mode-vertical lg:writing-mode-vertical rotate-270 text-gray-800 tracking-wider whitespace-nowrap transition-all duration-1000 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
+                class:opacity-0={!isVisible}
                 class:translate-x-[-20px]={!isVisible}
                 class:opacity-100={isVisible}
                 class:translate-x-0={isVisible}>
