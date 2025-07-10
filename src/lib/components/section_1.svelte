@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ArrowDown from './ArrowDown.svelte';
+    import ArrowDown from './utils/ArrowDown.svelte';
     import sectionBg from '$lib/assets/bg/section_1_bg.jpg';
     import { onMount } from 'svelte';
     
