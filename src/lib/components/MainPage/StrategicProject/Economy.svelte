@@ -81,12 +81,12 @@
     });
 </script>
 
-<section 
-    id="StrategicProject" 
+<section
+    id="StrategicProject"
     class="py-8 sm:py-12 bg-gray-50"
     bind:this={sectionRef}>
     
-    <div class="container mx-auto px-4 sm:px-6">
+    <div class="container mx-auto px-2 sm:px-3">
         <div class="lg:hidden mb-6 text-center transition-all duration-700 ease-out"
             class:opacity-0={!isVisible}
             class:translate-y-[-20px]={!isVisible}

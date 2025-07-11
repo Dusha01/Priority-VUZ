@@ -22,7 +22,7 @@
 </script>
 
 <button
-    class={`fixed bottom-8 right-8 z-50 bg-red-600 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+    class={`fixed bottom-8 cursor-pointer right-8 z-50 bg-red-600 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
     on:click={scrollToTop}
     aria-label="Вернуться наверх"
 >

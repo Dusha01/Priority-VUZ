@@ -35,7 +35,7 @@
       isHeaderVisible = window.scrollY <= headerHeight * 2;
     }
   
-    $: headerClasses = `fixed top-0 left-0 w-full z-50 bg-white shadow-md py-2 transition-transform duration-300 ${
+    $: headerClasses = `sticky top-0 left-0 w-full z-50 bg-white shadow-md py-2 transition-transform duration-300 ${
       isHeaderVisible ? '' : 'translate-y-[-200%]'
     }`;
 </script>

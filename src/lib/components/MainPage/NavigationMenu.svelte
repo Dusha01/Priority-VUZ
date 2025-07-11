@@ -44,7 +44,7 @@
     class:left-0={sticky}
     class:relative={!sticky}>
     <div class="container mx-auto">
-        <div class="flex justify-center space-x-2 p-2 overflow-x-auto">
+        <div class="flex justify-center space-x-2 p-2">
             <a href="#about" class="px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap">
                 <span>О&nbsp;ПРОГРАММЕ</span>
             </a>

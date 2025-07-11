@@ -14,17 +14,18 @@
 
 </script>
 
+<div>
+    <div>
+        <PageTop/>
+            <NavigationMenu />
+            <AboutSection />
+            <Mission/>
+            <Team/>
+            <Logistic/>
+            <Infrastruct/>
+            <Economy/>
+            <Growth/>
+    </div>
 
-<main>
-    <PageTop />
-    <NavigationMenu />
-    <AboutSection />
-    <Mission/>
-    <Team/>
-    <Logistic/>
-    <Infrastruct/>
-    <Economy/>
-    <Growth/>
-</main>
-
-<ScrollToTop />
+<!--    <ScrollToTop/>-->
+</div>

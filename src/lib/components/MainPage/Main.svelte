@@ -24,10 +24,11 @@
     });
 </script>
 
-<section 
-    class="page-top min-h-screen flex flex-col justify-between pt-32 pb-16 px-4 relative"
-    style="background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('{sectionBg}'); background-size: cover; background-position: center;">
-    <div class="page-top_main max-w-2xl text-left ml-4 md:ml-8 lg:ml-16 mt-16">
+<div
+        class="flex flex-col justify-between"
+        style="background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('{sectionBg}'); background-size: cover; background-position: center;">
+
+    <div class="max-w-2xl text-left ml-4 md:ml-8 lg:ml-16 mt-16">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 text-red-600">
             ПРОГРАММА РАЗВИТИЯ УНИВЕРСИТЕТА
         </h1>
@@ -46,25 +47,13 @@
         </p>
     </div>
 
-    <a href="#about" class="self-center mb-8">
+    <a href="#about" class="self-center" >
         <ArrowDown />
     </a>
-</section>
+</div>
 
 <style>
-    .page-top {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
     @media (max-width: 768px) {
-        .page-top_main, .page-top_end {
-            max-width: 100%;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-        
         .page-top_main h1 {
             font-size: 2rem;
         }
