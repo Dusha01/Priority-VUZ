@@ -1,31 +1,7 @@
-<script lang="ts">
-    import {
-        PageTop,
-        NavigationMenu,
-        AboutSection,
-        Mission,
-        Team,
-        Logistic,
-        Infrastruct,
-        Economy,
-        Growth,
-        ScrollToTop
-    } from '$lib/index'
-
+<script>
+    import MainPage from "$lib/pages/MainPage.svelte";
 </script>
 
-<div>
-    <div>
-        <PageTop/>
-            <NavigationMenu />
-            <AboutSection />
-            <Mission/>
-            <Team/>
-            <Logistic/>
-            <Infrastruct/>
-            <Economy/>
-            <Growth/>
-    </div>
-
-<!--    <ScrollToTop/>-->
+<div id="main-page">
+    <MainPage/>
 </div>
