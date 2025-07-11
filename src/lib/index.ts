@@ -1,5 +1,5 @@
 /* Page 1 */
-export { default as PageTop } from '$lib/components/main/Main.svelte';
+export { default as Main } from '$lib/components/main/Main.svelte';
 export { default as NavigationMenu } from '$lib/components/common/NavigationMenu.svelte';
 export { default as AboutSection } from '$lib/components/main/AboutProgramm.svelte';
 export { default as Mission } from '$lib/components/main/Mission.svelte';

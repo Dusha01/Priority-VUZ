@@ -1,6 +1,6 @@
 <script lang="ts">
     import {
-        PageTop,
+        Main,
         NavigationMenu,
         AboutSection,
         Mission,
@@ -16,7 +16,7 @@
 
 <div class="main-page-wrapper">
     <div>
-        <PageTop/>
+        <Main/>
             <NavigationMenu />
             <AboutSection />
             <Mission/>
