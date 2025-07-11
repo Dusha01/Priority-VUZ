@@ -130,7 +130,7 @@
             class:opacity-100={isVisible}
             class:translate-y-0={isVisible}>
             <button 
-                on:click={() => goto('/provisions')}
+                on:click={() => goto('/documents')}
                 class="dropbtn2 w-full bg-blue-600 text-white py-3 px-6 rounded-lg text-left font-medium hover:bg-blue-700 transition-colors duration-300">
                 Положения о реализуемых проектах
             </button>

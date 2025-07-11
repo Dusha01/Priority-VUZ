@@ -33,7 +33,6 @@
     let isVisible = false;
     let sectionRef: HTMLElement;
 
-    // Данные для секций
     const logisticsItems: LogisticsItem[] = [
         { id: '1.1', text: 'Исследовательская лаборатория по транспортным технологиям и логистическому взаимодействию' },
         { id: '1.2', text: 'Лаборатория маркетинговых исследований транспортного комплекса Дальневосточного региона' },
@@ -96,7 +95,7 @@
 
 <section id="StrategicProject" class="py-8 sm:py-12 bg-gray-50" bind:this={sectionRef}>
     <div class="container mx-auto px-4 sm:px-6">
-        <div class="lg:hidden mb-6 text-center transition-all duration-700 ease-out"
+        <div class="xl:hidden mb-6 text-center transition-all duration-700 ease-out"
             class:opacity-0={!isVisible}
             class:translate-y-[-20px]={!isVisible}
             class:opacity-100={isVisible}
@@ -104,8 +103,8 @@
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">СТРАТЕГИЧЕСКИЙ ПРОЕКТ</h2>
         </div>
         
-        <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
-            <div class="hidden lg:flex items-center justify-center w-20 xl:w-24 min-h-[400px] sticky top-[100px] transform -translate-y-0 self-start">
+        <div class="flex flex-col xl:flex-row gap-6 lg:gap-8">
+            <div class="hidden xl:flex items-center justify-center w-20 xl:w-24 min-h-[400px] sticky top-[100px] transform -translate-y-0 self-start">
                 <h2 class="text-3xl xl:text-4xl font-bold writing-mode-vertical rotate-180 text-gray-800 tracking-wider whitespace-nowrap transition-all duration-1000 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
                     class:opacity-0={!isVisible}
                     class:translate-x-[-20px]={!isVisible}
@@ -196,7 +195,7 @@
                                 class:translate-y-0={isVisible}>
                                 <div class="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                                     <img src={resultsLogo} alt="Результаты" class="h-6 sm:h-8 w-auto mt-1" loading="lazy">
-                                    <h4 class="text-base sm:text-lg font-bold text-gray-800">РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЙ К 2030 ГОДУ:</h4>
+                                    <h4 class="text-base sm:text-lg font-bold text-gray-800 break-words whitespace-normal">РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЙ К 2030 ГОДУ:</h4>
                                 </div>
                                 <div class="space-y-2 sm:space-y-3">
                                     {#each results as result}
@@ -236,11 +235,13 @@
                                     <img src={partnersLogo} alt="Партнеры" class="h-6 sm:h-8 w-auto" loading="lazy">
                                     <h4 class="text-base sm:text-lg font-bold text-gray-800">ПАРТНЁРЫ:</h4>
                                 </div>
-                                <div class="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                                <div class="grid grid-cols-3 xs:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4">
                                     {#each partners as partner, i}
-                                        <img src={partner} alt={`Партнер ${i + 1}`} 
-                                             class="w-full h-auto object-contain max-h-12 sm:max-h-16 transition-all duration-300 hover:scale-105" 
-                                             loading="lazy">
+                                        <div class="flex items-center justify-center">
+                                            <img src={partner} alt={`Партнер ${i + 1}`} 
+                                                 class="w-full h-auto max-h-12 sm:max-h-16 object-contain transition-all duration-300 hover:scale-105" 
+                                                 loading="lazy">
+                                        </div>
                                     {/each}
                                 </div>
                             </div>
@@ -262,10 +263,29 @@
         writing-mode: vertical-rl;
     }
     
+    @media (max-width: 1280px) {
+        .md\:col-span-2 {
+            grid-column: span 2;
+        }
+    }
+    
     @media (max-width: 1024px) {
-        .writing-mode-vertical {
-            writing-mode: horizontal-tb;
-            transform: none;
+        .lg\:grid-cols-3 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .bg-white {
+            min-width: 0;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .sm\:grid-cols-2, .lg\:grid-cols-3 {
+            grid-template-columns: 1fr;
+        }
+        
+        .md\:col-span-1, .md\:col-span-2 {
+            grid-column: span 1;
         }
     }
 </style>
