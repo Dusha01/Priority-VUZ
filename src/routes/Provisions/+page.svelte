@@ -1,13 +1,5 @@
 <script lang="ts">
-    import {
-        HeaderDaughter,
-        BodyDaughter,
-        FooterDaughter
-    } from '$lib/index'
+    import { BodyDaughter } from '$lib/index'
 </script>
 
-<HeaderDaughter/>
-<main>
-    <BodyDaughter/>
-</main>
-<FooterDaughter/>
+<BodyDaughter />

@@ -1,6 +1,5 @@
 <script lang="ts">
     import {
-        Header,
         PageTop,
         NavigationMenu,
         AboutSection,
@@ -10,14 +9,11 @@
         Infrastruct,
         Economy,
         Growth,
-        Footer,
         ScrollToTop
     } from '$lib/index'
 
 </script>
 
-
-<Header />
 
 <main>
     <PageTop />
@@ -31,5 +27,4 @@
     <Growth/>
 </main>
 
-<Footer/>
 <ScrollToTop />
