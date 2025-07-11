@@ -1,27 +1,27 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 
-    import engineeringEconomicsLogo from '../../assets/images/engineering.png';
-    import targetLogo from '../../assets/icons/target.png';
-    import technoLogo from '../../assets/icons/technologies.png';
-    import resultsLogo from '../../assets/icons/results.png';
-    import indicatorsLogo from '../../assets/icons/indicators.png';
-    import partnersLogo from '../../assets/icons/partners.png';
-    import prioritetLogo from '../../assets/logo/priority.png';
-    import tabletLogo from '../../assets/icons/tablet.png';
+    import engineeringEconomicsLogo from '../../../assets/images/engineering.png';
+    import targetLogo from '../../../assets/icons/target.png';
+    import technoLogo from '../../../assets/icons/technologies.png';
+    import resultsLogo from '../../../assets/icons/results.png';
+    import indicatorsLogo from '../../../assets/icons/indicators.png';
+    import partnersLogo from '../../../assets/icons/partners.png';
+    import prioritetLogo from '../../../assets/logo/priority.png';
+    import tabletLogo from '../../../assets/icons/tablet.png';
     
-    import partner1 from '../../assets/logo/1_1.jpg';
-    import partner2 from '../../assets/logo/1_1.jpg';
-    import partner3 from '../../assets/logo/1_2.png';
-    import partner4 from '../../assets/logo/1_3.png';
-    import partner5 from '../../assets/logo/1_4.png';
-    import partner6 from '../../assets/logo/1_5.jpg';
-    import partner7 from '../../assets/logo/1_6.png';
-    import partner8 from '../../assets/logo/1_8.png';
-    import partner9 from '../../assets/logo/1_9.png';
-    import partner10 from '../../assets/logo/1_10.png';
-    import partner11 from '../../assets/logo/1_10.png';
-    import partner12 from '../../assets/logo/1_10.png';
+    import partner1 from '../../../assets/logo/1_1.jpg';
+    import partner2 from '../../../assets/logo/1_1.jpg';
+    import partner3 from '../../../assets/logo/1_2.png';
+    import partner4 from '../../../assets/logo/1_3.png';
+    import partner5 from '../../../assets/logo/1_4.png';
+    import partner6 from '../../../assets/logo/1_5.jpg';
+    import partner7 from '../../../assets/logo/1_6.png';
+    import partner8 from '../../../assets/logo/1_8.png';
+    import partner9 from '../../../assets/logo/1_9.png';
+    import partner10 from '../../../assets/logo/1_10.png';
+    import partner11 from '../../../assets/logo/1_10.png';
+    import partner12 from '../../../assets/logo/1_10.png';
 
     type ListItem = {
         text: string;

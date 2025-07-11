@@ -1,5 +1,5 @@
 <script lang="ts">
-    import vuzLogo from '../assets/logo/dvgups.png';
+    import vuzLogo from '../../assets/logo/dvgups.png';
 </script>
 
 <section class="py-12 bg-gray-300">

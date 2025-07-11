@@ -1,7 +1,7 @@
 <script lang="ts">
-    import DVGUPSLogo from '../assets/logo/dvgups.png';
-    import prioritetLogo from '../assets/logo/priority.png';
-    import socialCenterLogo from '../assets/logo/socioСenter.png';
+    import DVGUPSLogo from '../../assets/logo/dvgups.png';
+    import prioritetLogo from '../../assets/logo/priority.png';
+    import socialCenterLogo from '../../assets/logo/socioСenter.png';
     import { onMount } from 'svelte';
   
     let headerHeight = 0;

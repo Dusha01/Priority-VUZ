@@ -1,11 +1,13 @@
 <script lang="ts">
-    import Header from "$lib/components/Provisions_comp/Header.svelte";
-    import Body from "$lib/components/Provisions_comp/Body.svelte";
-    import Footer from "$lib/components/Provisions_comp/Footer.svelte";
+    import {
+        HeaderDaughter,
+        BodyDaughter,
+        FooterDaughter
+    } from '$lib/index'
 </script>
 
-<Header/>
+<HeaderDaughter/>
 <main>
-    <Body/>
+    <BodyDaughter/>
 </main>
-<Footer/>
+<FooterDaughter/>

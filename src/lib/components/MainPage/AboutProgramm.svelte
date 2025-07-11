@@ -1,6 +1,6 @@
 <script lang="ts">
-    import prioritetLogo from '../assets/logo/priority.png';
-    import ministryLogo from '../assets/logo/ministry.png';
+    import prioritetLogo from '../../assets/logo/priority.png';
+    import ministryLogo from '../../assets/logo/ministry.png';
     import { onMount } from 'svelte';
   
     let isVisible = false;

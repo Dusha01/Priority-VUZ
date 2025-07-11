@@ -1,75 +1,73 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    
-    import logisticLogo from '../../assets/images/logistics.png';
-    import targetLogo from '../../assets/icons/target.png';
-    import technoLogo from '../../assets/icons/technologies.png';
-    import resultsLogo from '../../assets/icons/results.png';
-    import indicatorsLogo from '../../assets/icons/indicators.png';
-    import partnersLogo from '../../assets/icons/partners.png';
-    import prioritetLogo from '../../assets/logo/priority.png';
-    import tabletLogo from '../../assets/icons/tablet.png';
-    
-    import transLogo from '../../assets/logo/1.png';
-    import rzdLogo from '../../assets/logo/2.jpg';
-    import hzLogo from '../../assets/logo/3.jpg';
-    import fescoLogo from '../../assets/logo/4.jpg';
-    import hz_Logo from '../../assets/logo/5.png';
-    import planLogo from '../../assets/logo/6.png';
-    import otlkLogo from '../../assets/logo/7.png';
-    import HzLogo from '../../assets/logo/8.png';
-    import mtzLogo from '../../assets/logo/9.jpg';
-    import hzLogo_ from '../../assets/logo/10.jpg';
 
-    type LogisticsItem = {
+    import infrastructLogo from '../../../assets/images/infrastructure.png';
+    import targetLogo from '../../../assets/icons/target.png';
+    import technoLogo from '../../../assets/icons/technologies.png';
+    import resultsLogo from '../../../assets/icons/results.png';
+    import indicatorsLogo from '../../../assets/icons/indicators.png';
+    import partnersLogo from '../../../assets/icons/partners.png';
+    import prioritetLogo from '../../../assets/logo/priority.png';
+    import tabletLogo from '../../../assets/icons/tablet.png';
+    
+    import lokoLogo from '../../../assets/logo/1_1.jpg';
+    import rzdLogo from '../../../assets/logo/1_2.png';
+    import poliTehLogo from '../../../assets/logo/1_3.png';
+    import rusGidroLogo from '../../../assets/logo/1_4.png';
+    import hzLogo1 from '../../../assets/logo/1_5.jpg';
+    import setiLogo from '../../../assets/logo/1_6.png';
+    import vnizhkLogo from '../../../assets/logo/1_8.png';
+    import niasLogo from '../../../assets/logo/1_9.png';
+    import hzLogo2 from '../../../assets/logo/1_10.png';
+
+    type InfrastructItem = {
         id: string;
         text: string;
-    };
+    }
 
     type ListItem = {
         text: string;
-    };
+    }
 
     let isVisible = false;
     let sectionRef: HTMLElement;
 
-    // Данные для секций
-    const logisticsItems: LogisticsItem[] = [
-        { id: '1.1', text: 'Исследовательская лаборатория по транспортным технологиям и логистическому взаимодействию' },
-        { id: '1.2', text: 'Лаборатория маркетинговых исследований транспортного комплекса Дальневосточного региона' },
-        { id: '1.3', text: 'IT-лаборатория аналитики и прогнозирования транспортных процессов и логистики' },
-        { id: '1.4', text: 'Лаборатория интеллектуальных тормозных систем для вождения тяжеловесных поездов в условиях БАМа и субарктической зоны' }
+    const infrastructItems: InfrastructItem[] = [
+        {id: '2.1', text: 'Лаборатория управления надёжностью технических систем в условиях работы в Северной и Арктической зонах'},
+        {id: '2.2', text: 'Лаборатория новых технологий и материалов для восстановления и создания объектов транспортной инфраструктуры и подвижного состава в экстремальных климатических условиях Арктики'},
+        {id: '2.3', text: 'Цифровые электрические системы и инфраструктура'},
+        {id: '2.4', text: 'Лаборатория геотехнического строительства на промерзающих многолетнемерзлых и оттаивающих грунтах в Дальневосточном федеральном округе и Арктике'}
     ];
 
     const goals: ListItem[] = [
-        { text: 'создание модели прогнозирования освоения грузопотоков на Восточном полигоне России и её трансфер через инновации и кадровое сопровождение в реальный сектор экономики' },
-        { text: 'совершенствование технологий повышения пропускной и провозной способности Байкало-Амурской магистрали и субарктической зоны' }
+        { text: 'оптимизация планово-предупредительной системы технического обслуживания и ремонта подвижного состава' }
     ];
 
     const technologies: ListItem[] = [
-        { text: 'нейросетевые и вероятностно-статистические технологии управления логистикой' },
-        { text: 'новые расчетные модели грузопотоков' },
-        { text: 'линейка приборной и конструкторской базы тормозного оборудования для тяжеловесных поездов' }
+        { text: 'цифровые технологии управления надежностью и безопасностью' },
+        { text: 'новые материалы и технологии восстановления и ремонта' },
+        { text: 'цифровые электрические системы и инфраструктура' },
+        { text: 'геотехнические решения для строительства в сложных климатических условиях' }
     ];
 
     const results: ListItem[] = [
-        { text: '70+ публ./год – WoS, Scopus Q1, Q2' },
-        { text: '130+ млн. руб/год – доход в бюджет' },
-        { text: '5+ патентов на изобретение (способы и технологии)' },
-        { text: '25+ аспирантов и докторантов' }
+        { text: '60+ публ./год – WoS, Scopus Q1, Q2' },
+        { text: '100+ млн. руб/год – доход в бюджет' },
+        { text: '6+ патентов на изобретение (способы и технологии)' },
+        { text: '20+ аспирантов и докторантов' }
     ];
 
     const educationIndicators: ListItem[] = [
-        { text: '4+ программы ВО' },
-        { text: '1600+ студентов/год – контингент очнообучающихся' },
-        { text: '7+ новых программ ДПО' },
-        { text: '1200+ слушателей ДПО' }
+        { text: '5+ программы ВО' },
+        { text: '1500+ студентов/год – контингент очнообучающихся' },
+        { text: '8+ новых программ ДПО' },
+        { text: '1000+ слушателей ДПО' }
     ];
 
     const partners = [
-        transLogo, rzdLogo, hzLogo, fescoLogo, 
-        hz_Logo, planLogo, otlkLogo, HzLogo, 
-        mtzLogo, hzLogo_
+        lokoLogo, rzdLogo, poliTehLogo, rusGidroLogo,
+        hzLogo1, setiLogo, vnizhkLogo, niasLogo,
+        hzLogo2
     ];
 
     onMount(() => {
@@ -106,7 +104,7 @@
         
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
             <div class="hidden lg:flex items-center justify-center w-20 xl:w-24 min-h-[400px] sticky top-[100px] transform -translate-y-0 self-start">
-                <h2 class="text-3xl xl:text-4xl font-bold writing-mode-vertical rotate-180 text-gray-800 tracking-wider whitespace-nowrap transition-all duration-1000 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
+                <h2 class="text-3xl xl:text-4xl font-bold writing-mode-vertical text-gray-800 tracking-wider whitespace-nowrap transition-all duration-1000 ease-[cubic-bezier(0.68,-0.55,0.27,1.55)]"
                     class:opacity-0={!isVisible}
                     class:translate-x-[-20px]={!isVisible}
                     class:opacity-100={isVisible}
@@ -122,8 +120,8 @@
                     class:opacity-100={isVisible}
                     class:translate-y-0={isVisible}>
                     <div class="flex items-center gap-3 sm:gap-4">
-                        <img src={tabletLogo} alt="Логистика" class="h-8 sm:h-10 w-auto" loading="lazy">
-                        <h3 class="text-2xl sm:text-3xl xl:text-4xl font-bold text-blue-600">#ЛОГИСТИКА</h3>
+                        <img src={tabletLogo} alt="Инфраструктура" class="h-8 sm:h-10 w-auto" loading="lazy">
+                        <h3 class="text-2xl sm:text-3xl xl:text-4xl font-bold text-blue-600">#ИНФРАСТРУКТУРА</h3>
                     </div>
                     <img src={prioritetLogo} alt="Приоритет 2030" class="h-16 sm:h-20 w-auto" loading="lazy">
                 </div>
@@ -135,11 +133,11 @@
                         class:opacity-100={isVisible}
                         class:translate-x-0={isVisible}>
                         <div class="relative mb-3 sm:mb-4">
-                            <img src={logisticLogo} alt="Логистика" class="w-full rounded-lg shadow-md" loading="lazy">
-                            <span class="absolute bottom-3 right-3 bg-blue-600 text-white text-xl sm:text-2xl font-bold rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">1</span>
+                            <img src={infrastructLogo} alt="Инфраструктура" class="w-full rounded-lg shadow-md" loading="lazy">
+                            <span class="absolute bottom-3 right-3 bg-blue-600 text-white text-xl sm:text-2xl font-bold rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">2</span>
                         </div>
                         <div class="space-y-2 sm:space-y-3">
-                            {#each logisticsItems as item}
+                            {#each infrastructItems as item}
                                 <p class="text-sm sm:text-base text-gray-700 leading-snug sm:leading-relaxed">
                                     <span class="font-bold">{item.id}</span> {item.text}
                                 </p>
@@ -260,6 +258,7 @@
     
     .writing-mode-vertical {
         writing-mode: vertical-rl;
+        transform: rotate(180deg);
     }
     
     @media (max-width: 1024px) {
