@@ -5,4 +5,3 @@
 <div class="documents-page">
     <DocumentsPage/>
 </div>
-

@@ -11,4 +11,4 @@ export { default as Growth } from '$lib/components/main/DevelopmentProgram.svelt
 export { default as ScrollToTop } from '$lib/components/main/ui/ScrollToTop.svelte';
 
 /* Page 2 */
-export { default as DocumentsListDaughter } from '$lib/components/documents/DocumentsList.svelte'
+export { default as DocumentsList } from '$lib/components/documents/DocumentsList.svelte'
