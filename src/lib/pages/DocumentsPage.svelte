@@ -1,5 +1,8 @@
 <script lang="ts">
-    import { DocumentsList } from '$lib'
+    import { DocumentsList,
+        DocumentsNavigationMenu
+     } from '$lib'
 </script>
 
+<DocumentsNavigationMenu/>
 <DocumentsList/>

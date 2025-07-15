@@ -2,7 +2,9 @@
     import vuzLogo from '../../assets/logo/dvgups.png';
 </script>
 
-<section class="py-12 bg-gray-300">
+<section
+        id = "contacts"
+        class="py-12 bg-gray-300">
     <div class="container mx-auto px-10 flex flex-col md:flex-row gap-8">
         <div class="flex-shrink-0">
             <a href="https://dvgups.ru/" target="_blank" rel="noopener noreferrer">

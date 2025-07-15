@@ -1,11 +1,11 @@
 <script lang="ts">
     interface Document {
-      id: string;
-      number: string;
-      title: string;
-      description: string;
-      filePath: string;
-    }
+    id: string;
+    number: string;
+    title: string;
+    description: string;
+    filePath: string;
+  }
   
     const documents: Document[] = [
       {
@@ -93,46 +93,12 @@
         filePath: "https://dvgups.ru/prioritet-2030-dalnij-vostok/img/documents/%D0%9F%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%94%D0%92%D0%93%D0%A3%D0%9F%D0%A1%20%D0%9F%2010-14-24.pdf"
       }
     ];
-
-    function goBack() {
-        window.history.back();
-    }
 </script>
   
 
-<style>
-    .back-button {
-        position: fixed;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 50;
-        transition: all 0.3s ease;
-    }
-    
-    @media (max-width: 768px) {
-        .back-button {
-            left: 10px;
-            top: 80px;
-            transform: none;
-        }
-    }
-</style>
-
-<section class="py-12 bg-gray-50 relative">
-    <div class="back-button">
-        <button 
-            on:click={goBack}
-            aria-label="Вернуться назад"
-            class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            <span class="sr-only">Вернуться назад</span>
-        </button>
-    </div>
-
+<section
+        id = "documents"
+        class="py-12 bg-gray-50 relative">
     <div class="container mx-auto px-4 sm:px-6">
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-800">Положения</h2>

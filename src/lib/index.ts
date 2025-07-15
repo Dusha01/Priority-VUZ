@@ -13,3 +13,4 @@ export { default as ScrollToTop } from '$lib/components/main/ui/ScrollToTop.svel
 
 /* Page 2 */
 export { default as DocumentsList } from '$lib/components/documents/DocumentsList.svelte'
+export { default as DocumentsNavigationMenu } from '$lib/components/common/DocumentsNavigationMenu.svelte'
