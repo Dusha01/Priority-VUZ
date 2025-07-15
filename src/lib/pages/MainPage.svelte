@@ -1,5 +1,6 @@
 <script lang="ts">
     import {
+        Header,
         Main,
         NavigationMenu,
         AboutSection,
@@ -16,6 +17,7 @@
 
 <div class="main-page-wrapper">
     <div>
+        <Header/>
         <Main/>
             <NavigationMenu />
             <AboutSection />

@@ -1,4 +1,5 @@
 /* Page 1 */
+export {default as Header} from '$lib/components/common/Header.svelte'
 export { default as Main } from '$lib/components/main/Main.svelte';
 export { default as NavigationMenu } from '$lib/components/common/NavigationMenu.svelte';
 export { default as AboutSection } from '$lib/components/main/AboutProgramm.svelte';
