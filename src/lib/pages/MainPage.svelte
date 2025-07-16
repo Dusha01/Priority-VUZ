@@ -8,8 +8,7 @@
         Logistic,
         Infrastruct,
         Economy,
-        Growth,
-        ScrollToTop
+        Growth
     } from '$lib'
 
 </script>
@@ -26,6 +25,4 @@
             <Economy/>
             <Growth/>
     </div>
-
-    <ScrollToTop/>
 </div>
