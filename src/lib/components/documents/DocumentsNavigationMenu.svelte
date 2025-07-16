@@ -107,7 +107,7 @@
 
             <div class="flex absolute left-1/2 transform -translate-x-1/2 space-x-2">
                 <a href="#documents" class="block px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap" on:click={closeMobileMenu}>
-                    <span>О НАС</span>
+                    <span>ДОКУМЕНТЫ</span>
                 </a>
                 <a href="#contacts" class="block px-4 py-2 rounded-full hover:bg-gray-100 transition whitespace-nowrap" on:click={closeMobileMenu}>
                     <span>КОНТАКТЫ</span>
