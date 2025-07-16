@@ -1,7 +1,7 @@
 /* Page 1 */
 export {default as Header} from '$lib/components/common/Header.svelte'
 export { default as Main } from '$lib/components/main/Main.svelte';
-export { default as NavigationMenu } from '$lib/components/common/NavigationMenu.svelte';
+export { default as NavigationMenu } from '$lib/components/main/NavigationMenu.svelte';
 export { default as AboutSection } from '$lib/components/main/AboutProgramm.svelte';
 export { default as Mission } from '$lib/components/main/Mission.svelte';
 export { default as Team } from '$lib/components/main/Team.svelte';
@@ -12,4 +12,4 @@ export { default as Growth } from '$lib/components/main/DevelopmentProgram.svelt
 
 /* Page 2 */
 export { default as DocumentsList } from '$lib/components/documents/DocumentsList.svelte'
-export { default as DocumentsNavigationMenu } from '$lib/components/common/DocumentsNavigationMenu.svelte'
+export { default as DocumentsNavigationMenu } from '$lib/components/documents/DocumentsNavigationMenu.svelte'

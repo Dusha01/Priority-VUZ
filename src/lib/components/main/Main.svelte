@@ -54,13 +54,6 @@
 
 <style>
     @media (max-width: 768px) {
-        .page-top_main h1 {
-            font-size: 2rem;
-        }
-        
-        .page-top_main p {
-            font-size: 1.25rem;
-        }
         
         .page-top_end h2 {
             font-size: 1.5rem;
