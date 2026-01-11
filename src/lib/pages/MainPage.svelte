@@ -2,7 +2,7 @@
     import {
         Main,
         NavigationMenu,
-        AboutSection,
+        AboutProgram,
         Mission,
         Team,
         Logistic,
@@ -17,7 +17,7 @@
     <div>
         <Main/>
             <NavigationMenu />
-            <AboutSection />
+            <AboutProgram />
             <Mission/>
             <Team/>
             <Logistic/>
